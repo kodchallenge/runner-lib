@@ -95,7 +95,6 @@ const printAsArray = (value) => {
 module.exports = {
     getArg,
     getArgAsNumber,
-    getArgAsString,
     getArgAsBoolean,
     getArgAsArray,
     getArgAsObject,

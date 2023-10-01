@@ -17,7 +17,7 @@ describe("INPUT ARG PARSER", () => {
 
     it("should return a string", () => {
         addArgs(["1"])
-        expect(kod.getArgAsString(0)).toBe("1")
+        expect(kod.getArg(0)).toBe("1")
     })
 
     it("should return a number", () => {
