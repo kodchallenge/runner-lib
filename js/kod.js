@@ -22,17 +22,14 @@ const getArgAsBoolean = (index) => {
     return arg !== "false" && arg != '0' && Boolean(getArg(index));
 }
 
-const getArgAsArray = (index) => {
-    return getArg(index).split(',');
-}
-
-const getArgAsNumberArray = (index) => {
-    return getArg(index).split(',').map(Number);
-}
-
 const getArgAsObject = (index) => {
     return JSON.parse(getArg(index));
 }
+
+const getArgAsArray = (index) => {
+    return getArgAsObject(index);
+}
+
 
 const getArgAsDate = (index) => {
     return new Date(getArg(index));
@@ -52,4 +49,21 @@ const printAsBoolean = (value) => {
 
 const printAsArray = (array) => {
     console.log(JSON.stringify(array));
+}
+
+
+
+module.exports = {
+    getArg,
+    getArgAsNumber,
+    getArgAsString,
+    getArgAsBoolean,
+    getArgAsArray,
+    getArgAsObject,
+    getArgAsDate,
+    
+    ///
+    print,
+    printAsBoolean,
+    printAsArray
 }
