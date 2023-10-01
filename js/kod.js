@@ -86,8 +86,8 @@ const printAsBoolean = (value) => {
  * @param {any} value
  * @example printAsArray([[1,2],[3]]) // Output => [[1,2],[3]]
  */
-const printAsArray = (array) => {
-    console.log(JSON.stringify(array));
+const printAsArray = (value) => {
+    console.log(JSON.stringify(value));
 }
 
 
